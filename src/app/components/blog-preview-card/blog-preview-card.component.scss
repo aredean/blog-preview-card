@@ -2,14 +2,26 @@ h1,h2,h3,h4,h5,h6,p {
     margin : 0px;
 }
 
-p {
-    font-size: 16px;
-}
-
 @media screen and (max-width: 375px) {
     .card {
         max-width: 279px;
         min-width: 279px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .card-content-title {
+        font-size: 20px;
+    }
+    
+    .card-content-description {
+        font-size: 14px;
+    }
+
+    .card-content-published-date, .card-content-categories a {
+        font-size: 12px;
     }
 }
 
