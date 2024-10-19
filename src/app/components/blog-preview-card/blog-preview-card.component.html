@@ -1,0 +1,28 @@
+<div class="card">
+    <div *ngIf="data?.image" class="card-image-container">
+        <img class="card-image" [src]="data?.image" alt="">
+    </div>
+    <div class="card-content">
+        <div class="card-content-categories">
+            @for(item of data?.categories; track item){
+            <a class="text-preset-3-bold" href="">
+                {{item?.title}}
+            </a>
+            }
+        </div>
+        <p class="card-content-published-date text-preset-3">
+            Published <time>{{ data?.date | date:'dd MMM yyyy' }}</time>
+        </p>
+
+        <h2 class="card-content-title text-preset-1">
+            {{ data?.title }}
+        </h2>
+        <p class="card-content-description text-preset-2">
+            {{ data?.description }}
+        </p>
+    </div>
+    <div *ngIf="data?.author" class="card-author">
+        <img class="card-author-userpic" [src]="data?.author?.image" alt="">
+        <p class="card-author-name text-preset-3-bold">{{data?.author?.name}}</p>
+    </div>
+</div>

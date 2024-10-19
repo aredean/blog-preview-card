@@ -1,0 +1,22 @@
+.app-container {
+    background-color: var(--yellow);
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+.component-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin: auto;
+    @apply flex items-center justify-center;
+}
+
+.navigation {
+    padding : 4px;
+    display: grid;
+    position: absolute;
+    gap : 4px;
+}
