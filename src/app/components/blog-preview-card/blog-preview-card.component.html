@@ -14,9 +14,11 @@
             Published <time>{{ data?.date | date:'dd MMM yyyy' }}</time>
         </p>
 
-        <h2 class="card-content-title text-preset-1">
+        <a href="{{ data?.link }}">
+            <h2 class="card-content-title text-preset-1">
             {{ data?.title }}
-        </h2>
+            </h2>
+        </a>
         <p class="card-content-description text-preset-2">
             {{ data?.description }}
         </p>
